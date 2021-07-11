@@ -1,0 +1,169 @@
+<template>
+  <div class="social-network">
+    <div class="social-media social-media-orientation social-media-placement">
+      <ul v-scrollanimation class="social-media-list">
+        <li v-for="link in links" :key="link.link">
+          <div @click="openSite(link.link)" class="a-link">
+            <Icon :name="link.icon" :size="25" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      v-scrollanimation
+      class="email-media social-media-orientation social-media-placement"
+    >
+      <div class="email-media-link">
+        <div class="mail-link" @click="$router.push('/contact')">
+          {{ email }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import { email, socialMediaLinks } from "./../../constant/social-network";
+import Icon from "./../Icons";
+export default {
+  name: "SocialMediaLinks",
+  components: { Icon },
+  data: () => {
+    return {
+      links: socialMediaLinks,
+      email: email,
+      show: true,
+    };
+  },
+  methods: {
+    openSite(site) {
+      window.open(site, "_blank");
+    },
+  },
+};
+</script>
+<style lang="scss" >
+.social-network {
+  .social-media-orientation {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .social-media-placement {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+  }
+  .social-media {
+    left: 40px;
+    .social-media-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &.a-before-enter {
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: 0.2s 1000ms;
+      }
+
+      &.a-enter {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      li {
+        padding: 10px;
+        transition: 0.2s ease-in-out;
+        color: var(--lightSlate);
+
+        &:hover {
+          transform: translate(0px, -4px);
+          .a-link {
+            cursor: pointer;
+            color: var(--primary) !important;
+          }
+        }
+      }
+      &::after {
+        opacity: 1;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        margin-top: 20px;
+        background-color: var(--lightSlate);
+      }
+    }
+  }
+
+  .email-media {
+    left: auto;
+    right: 40px;
+
+    &.a-before-enter {
+      opacity: 0;
+      transform: translateX(20px);
+      transition: 0.2s 1200ms;
+    }
+
+    &.a-enter {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+    .email-media-link {
+      position: relative;
+
+      .mail-link {
+        opacity: 0.7;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-family: "Courier New", Courier, monospace !important;
+        letter-spacing: 0.1em;
+        writing-mode: vertical-lr;
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        transition: 0.2s ease-in-out !important;
+        cursor: pointer;
+        color: var(--lightSlate);
+
+        &:hover {
+          transform: translate(0px, -5px);
+          color: var(--primary) !important;
+          opacity: 1;
+        }
+      }
+      &::after {
+        opacity: 1;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: var(--lightSlate);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1078px) {
+  .social-media {
+    left: 20px !important;
+  }
+  .email-media {
+    right: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .social-network {
+    display: none;
+  }
+}
+</style>

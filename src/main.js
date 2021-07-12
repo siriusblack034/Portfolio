@@ -1,32 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import router from './router/index'
 import './assets/base.scss'
-import ScrollAnimation, { animationViewFull } from './directives/scrollAnimation'
-import { store } from './store'
-import vuetify from './plugins/vuetify'
-
-Vue.directive('scrollanimation', ScrollAnimation)
-Vue.directive('scrollview', animationViewFull)
-Vue.directive('click-outside', {
-  beforeMount(el, binding) {
-    
-    el.clickOutsideEvent = function (event) {
-      if (!(el === event.target || el.contains(event.target))) {
-        binding.value(event, el);
-      }
-    };
-    document.body.addEventListener('click', el.clickOutsideEvent);
-  },
-  unmounted(el) {
-    document.body.removeEventListener('click', el.clickOutsideEvent);
-  }
-})
+import { store } from './store.js'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import VueI18n from 'vue-i18n'
+Vue.use(VueI18n)
 
 new Vue({
-  vuetify,
+  created() {
+    AOS.init()
+  },
   store,
   router,
   render: h => h(App)
 }).$mount('#app')
-

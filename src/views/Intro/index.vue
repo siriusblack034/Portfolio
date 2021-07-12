@@ -1,20 +1,36 @@
 <template>
   <div>
     <section class="intro">
-      <h1 v-scrollanimation style="transition-delay: 100ms" class="cursor-text">
+      <h1
+        data-aos="fade-right"
+        style="transition-delay: 100ms"
+        class="cursor-text"
+      >
         <span>👋 </span>Hi! My name is
       </h1>
-      <h2 v-scrollanimation style="transition-delay: 250ms" class="cursor-text">
+      <h2
+        data-aos="fade-right"
+        style="transition-delay: 250ms"
+        class="cursor-text"
+      >
         {{ name }}
       </h2>
-      <h3 v-scrollanimation style="transition-delay: 400ms" class="cursor-text">
+      <h3
+        data-aos="fade-right"
+        style="transition-delay: 400ms"
+        class="cursor-text"
+      >
         {{ IDo }}
       </h3>
-      <p v-scrollanimation style="transition-delay: 550ms" class="cursor-text">
+      <p
+        data-aos="fade-right"
+        style="transition-delay: 550ms"
+        class="cursor-text"
+      >
         {{ des }}
       </p>
       <div
-        v-scrollanimation
+        data-aos="fade-right"
         style="transition-delay: 700ms; width: 300px"
         @click="closeModal()"
       >
@@ -46,6 +62,7 @@ import GradientBorder from "../../components/GradientBorder.vue";
 import Icon from "../../components/Icon/Icon.vue";
 export default {
   components: { GradientBorder, Icon },
+
   data() {
     return {
       name: "Nguyen Tuan Chien",

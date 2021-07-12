@@ -1,6 +1,6 @@
 import VueRouter from "vue-router";
 import Vue from 'vue'
-import Intro from "../views/AboutMe/AboutMe";
+import Intro from "../views/AboutMe";
 Vue.use(VueRouter)
 const routes = [
   {
@@ -12,26 +12,26 @@ const routes = [
     name: "AboutMe",
     component: Intro,
   },
-  /* {
+  /*  {
       path: "/experience",
       name: "Experience",
       component: () => import("./../views/MyExperience")
-  },
-  {
-      path: "/Project",
-      name: "Project",
-      component: () => import("./../views/MyWork")
-  },
-  {
-      path: "/contact",
-      name: "Contact",
-      component: () => import("./../views/ContactMe")
-  },
-  {
-      path: "/:pathMatch(.*)*",
-      name: "PageNotFound",
-      component: () => import("./../views/PageNotFound")
   }, */
+  {
+    path: "/Project",
+    name: "Project",
+    component: () => import("../views/Project.vue")
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: () => import("./../views/Contact")
+  },
+  {
+    path: "/*",
+    name: "PageNotFound",
+    component: () => import("./../views/PageNotFound")
+  },
 ];
 
 const router = new VueRouter({

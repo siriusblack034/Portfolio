@@ -1,7 +1,7 @@
 <template>
   <div class="social-network">
     <div class="social-media social-media-orientation social-media-placement">
-      <ul v-scrollanimation class="social-media-list">
+      <ul data-aos="fade-right" class="social-media-list">
         <li v-for="link in links" :key="link.link">
           <div @click="openSite(link.link)" class="a-link">
             <Icon :name="link.icon" :size="25" />
@@ -10,7 +10,7 @@
       </ul>
     </div>
     <div
-      v-scrollanimation
+      data-aos="fade-right"
       class="email-media social-media-orientation social-media-placement"
     >
       <div class="email-media-link">
@@ -22,8 +22,8 @@
   </div>
 </template>
 <script>
-import { email, socialMediaLinks } from "./../../constant/social-network";
-import Icon from "./../Icons";
+import { email, socialMediaLinks } from "./../constants/social-network";
+import Icon from "./Icon/Icon.vue";
 export default {
   name: "SocialMediaLinks",
   components: { Icon },

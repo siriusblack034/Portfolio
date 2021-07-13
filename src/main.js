@@ -5,14 +5,15 @@ import './assets/base.scss'
 import { store } from './store.js'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import VueI18n from 'vue-i18n'
-Vue.use(VueI18n)
+import i18n from './i18n'
 
 new Vue({
   created() {
     AOS.init()
   },
+
   store,
   router,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

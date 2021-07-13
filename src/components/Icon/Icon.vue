@@ -1,6 +1,6 @@
 <template>
   <svg
-    viewBox="0 0 15 15"
+    :viewBox="setViewBox"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     :width="size"
@@ -16,6 +16,13 @@ export default {
     return {
       icons: Icons,
     };
+  },
+  computed: {
+    setViewBox() {
+      return this.name == "vuetify" || this.name == "java"
+        ? "0 0 24 24"
+        : "0 0 15 15";
+    },
   },
   props: {
     name: { type: String },

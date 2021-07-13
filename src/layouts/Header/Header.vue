@@ -7,14 +7,8 @@
     }"
   >
     <nav>
-      <div class="logo-image">
-        <img
-          width="50"
-          height="50"
-          :src="require('../../assets/images/logo.svg')"
-          @click="$router.push('/')"
-          alt="Jenuel Ganawed Logo Image"
-        />
+      <div class="logo-image" @click="$router.push({ name: 'AboutMe' })">
+        <Logo />
       </div>
       <div class="navs">
         <ol>
@@ -25,19 +19,10 @@
           >
             <div :class="{ active: $route.name == 'AboutMe' }">
               <Icon name="user" :size="15" />
-              About Me
+              {{ $t("nav.about-me") }}
             </div>
           </li>
-          <li
-            data-aos="fade-right"
-            style="transition-delay: 250ms"
-            @click="$router.push({ name: 'Experience' })"
-          >
-            <div :class="{ active: $route.name == 'Experience' }">
-              <Icon name="case" :size="15" />
-              Experience
-            </div>
-          </li>
+
           <li
             data-aos="fade-right"
             style="transition-delay: 400ms"
@@ -45,7 +30,7 @@
           >
             <div :class="{ active: $route.name == 'Project' }">
               <Icon name="code" :size="15" />
-              Projects
+              {{ $t("nav.projects") }}
             </div>
           </li>
           <li
@@ -55,10 +40,9 @@
           >
             <div :class="{ active: $route.name == 'Contact' }">
               <Icon name="envelope" :size="15" />
-              Contact Me
+              {{ $t("nav.contact-me") }}
             </div>
           </li>
-          
         </ol>
         <GradientBorder
           data-aos="fade-right"
@@ -72,11 +56,32 @@
             rel="noopener"
           >
             <Icon name="file" :size="15" />
-            Resume
+            {{ $t("nav.resume") }}
           </a>
         </GradientBorder>
         <div data-aos="fade-right" style="transition-delay: 1000ms">
           <ThemeChanger />
+        </div>
+        <div class="nav__lang">
+          <div>
+            <Icon
+              name="lang"
+              :size="20"
+              class="nav__lang-icon"
+              style="
+                fill: var(--lightSlate);
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+              "
+            />
+          </div>
+          <div class="nav__lang-option">
+            <h3 class="nav__lang-item">
+              English
+              <i class="fas fa-check"></i>
+            </h3>
+            <h3 class="nav__lang-item">Tiếng Việt</h3>
+          </div>
         </div>
       </div>
       <div class="show-mobile-nav-but">
@@ -97,9 +102,10 @@ import ThemeChanger from "../../components/ThemeChanger.vue";
 import Icon from "./../../components/Icon/Icon.vue";
 import GradientBorder from "../../components/GradientBorder.vue";
 import { mapMutations } from "vuex";
+import Logo from "../../components/Logo";
 export default {
   name: "Header",
-  components: { Icon, GradientBorder, ThemeChanger },
+  components: { Icon, GradientBorder, ThemeChanger, Logo },
   data() {
     return {
       scroll: 0,
@@ -152,3 +158,90 @@ export default {
   },
 };
 </script>
+<style scoped>
+.navs {
+  padding-right: 32px;
+}
+.nav__lang {
+}
+.nav__lang-icon {
+  fill: var(--lightSlate);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav__lang-option {
+  display: none;
+  position: absolute;
+  background-color: var(--white-color);
+  box-shadow: 0 1px 2px #e0e0e0;
+  right: 0;
+  top: calc(100% + 16px);
+  width: 130px;
+  z-index: 1;
+  border-radius: 2px;
+  outline: none;
+}
+.nav__lang-item {
+}
+.nav__lang-item {
+}
+.logo-image {
+  margin-left: 26px;
+}
+/*.nav__lang {
+  height: 16px;
+  padding-left: 16px;
+  position: relative;
+  border-left: 1px solid #e8e8e8;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+.header__search-select-span {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+.header__search-select-icon {
+  color: #4a4a4a;
+  font-size: 1.4rem;
+  margin: 0 16px 0 8px;
+}
+.header__search-select:hover .header__search-option {
+  display: block;
+}
+.header__search-option {
+  display: none;
+  position: absolute;
+  background-color: var(--white-color);
+  box-shadow: 0 1px 2px #e0e0e0;
+  right: 0;
+  top: calc(100% + 16px);
+  width: 130px;
+  z-index: 1;
+  border-radius: 2px;
+  outline: none;
+  animation: fadeIn ease-in 0.2s;
+}
+.header__search-option::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: -16px;
+}
+.header__search-option-item {
+  padding: 8px 16px 8px 8px;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header__search-option-item i {
+  color: #e8e8e8;
+  margin-left: 12px;
+}
+.header__search-option-item:hover {
+  background-color: #fafafa;
+} */
+</style>

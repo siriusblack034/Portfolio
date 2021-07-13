@@ -1,13 +1,12 @@
 <template>
   <section data-aos="fade-down" class="contact-me">
     <h2 class="numbered-header" style="margin: 10px 0px -10px">
-      <Icon class="front-icon" name="envelope" :size="30" /> Contact Me
+      <Icon class="front-icon" name="envelope" :size="30" /> {{$t('contact.title')}}
     </h2>
     <div>
       <div class="form" style="max-width: 800px">
         <p class="header-des">
-          I am currently looking for Job. However, if you have other request or
-          questions, don't hesitate to contact me using the form bellow.
+          {{$t('contact.des')}}
         </p>
       </div>
       <Form />

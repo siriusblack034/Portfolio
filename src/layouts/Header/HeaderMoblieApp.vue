@@ -22,22 +22,10 @@
         >
           <div :class="{ active: $route.name == 'AboutMe' }">
             <Icon name="user" :size="15" />
-            About Me
+            {{$t('nav.about-me')}}
           </div>
         </li>
-        <li
-          data-aos="fade-right"
-          style="transition-delay: 250ms"
-          @click="
-            $router.push({ name: 'Experience' });
-            $store.state.navShow = false;
-          "
-        >
-          <div :class="{ active: $route.name == 'Experience' }">
-            <Icon name="case" :size="15" />
-            Experience
-          </div>
-        </li>
+
         <li
           data-aos="fade-right"
           style="transition-delay: 400ms"
@@ -48,7 +36,8 @@
         >
           <div :class="{ active: $route.name == 'Project' }">
             <Icon name="code" :size="15" />
-            Projects
+                        {{$t('nav.projects')}}
+
           </div>
         </li>
         <li
@@ -61,15 +50,11 @@
         >
           <div :class="{ active: $route.name == 'Contact' }">
             <Icon name="envelope" :size="15" />
-            Contact Me
+                        {{$t('nav.contact-me')}}
+
           </div>
         </li>
-        <li data-aos="fade-right" style="transition-delay: 650ms">
-          <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
-            <Icon name="documents" :size="15" />
-            Blog
-          </a>
-        </li>
+        
         <li data-aos="fade-right" style="transition-delay: 700ms">
           <GradientBorder
             data-aos="fade-right"
@@ -83,7 +68,8 @@
               rel="noopener"
             >
               <Icon name="file" :size="15" />
-              Resume
+                 {{$t('nav.resume')}}
+
             </a>
           </GradientBorder>
         </li>

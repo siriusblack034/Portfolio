@@ -1,4 +1,5 @@
 export default {
+  key:"tin-dog",
   title: "Tin Dog",
   des: "<p>A news interface about pet lovers. </p>",
   headIcon: 'chat',

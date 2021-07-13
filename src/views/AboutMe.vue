@@ -31,15 +31,16 @@
         data-aos="fade-right"
         style="transition-delay: 150ms"
       >
-        <Icon class="front-icon" name="user" :size="30" /> About Me
+        <Icon class="front-icon" name="user" :size="30" />
+        {{ $t("about-me.title") }}
       </h2>
       <div class="about-me-inner">
         <div class="about-me-text">
           <div
             class="about-me-text-info"
-            v-html="AboutMe.info"
+            v-html="$t('about-me.info')"
             data-aos="fade-right"
-            style="transition-delay: 250ms"
+            style="transition-delay: 250ms; line-height: 1.5rem"
           ></div>
           <ul
             class="skill-list"
@@ -78,9 +79,11 @@
 <script>
 import Icon from "../components/Icon/Icon.vue";
 import AboutMe from "../constants/about-me";
+/* import PreLoading from "../components/PreLoader.vue"; */
 export default {
   components: {
     Icon,
+    /* PreLoading, */
   },
   data: () => {
     return {
@@ -90,7 +93,7 @@ export default {
         title: "",
         des: "",
       },
-      services: [
+      /* services: [
         {
           icon: "gridLayout",
           title: "Front-End Development",
@@ -109,7 +112,7 @@ export default {
           description:
             "Managing all of the activities included in the process of posting and maintaining a website on the World Wide Web. This includes Website optimization and SEO friendly.",
         },
-      ],
+      ], */
     };
   },
   methods: {

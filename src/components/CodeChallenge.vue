@@ -49,7 +49,10 @@
                   </div>
                 </div>
                 <h3 class="item-title">{{ code.title }}</h3>
-                <div class="item-des" v-html="code.des"></div>
+                <div
+                  class="item-des"
+                  v-html="getDesChallenges(code.key)"
+                ></div>
               </header>
               <footer>
                 <ul>
@@ -81,6 +84,10 @@ export default {
     openSite(site) {
       window.open(site, "_blank");
     },
+    getDesChallenges(key){
+      let chanllenges = this.$t('project.challenges')
+      return chanllenges[key]
+    }
   },
 };
 </script>
@@ -179,7 +186,8 @@ export default {
           .item-des {
             color: var(--lightSlate);
             font-size: 0.9rem;
-            line-height: 1.2;
+            line-height: 1.4;
+            padding-top : 8px;
           }
         }
 

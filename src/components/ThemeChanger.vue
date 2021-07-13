@@ -29,7 +29,7 @@
               :style="`padding: 10px; background-color: ${theme.color3};`"
             ></div>
           </div>
-          <span>{{ theme.name }}</span>
+          <span>{{ getThemeName(theme.key) }}</span>
         </div>
       </div>
     </div>
@@ -44,30 +44,29 @@ export default {
       selectedTheme: "Green Light",
       themes: [
         {
+          key: "green-light",
           name: "Green Light",
           color1: "#64ffda",
           color2: "#349780",
           color3: "#0a192f",
         },
         {
+          key: "yellow-orange",
           name: "Yellow Orange",
           color1: "#f0a500",
           color2: "#e45826",
           color3: "#222222",
         },
+
         {
-          name: "UnderTheSea",
-          color1: "#2aea5e",
-          color2: "#00a941",
-          color3: "#011116",
-        },
-        {
+          key: "night-burns",
           name: "Night Burns",
           color1: "#fc595f",
           color2: "#d2494e",
           color3: "#151515",
         },
         {
+          key: "light-burns",
           name: "Light Burn",
           color1: "#b8005c",
           color2: "#dcdcdc",
@@ -90,6 +89,10 @@ export default {
   methods: {
     hide() {
       this.open = false;
+    },
+    getThemeName(name) {
+      let themes = this.$t("nav.view");
+      return themes[name];
     },
     toggle() {
       this.open = true;
@@ -121,7 +124,7 @@ export default {
   }
   .theme-dropdown-content {
     position: absolute;
-    min-width: 180px;
+    min-width: 220px;
     transform: translateY(30px);
     right: 20px;
     padding: 15px 0 0 0;

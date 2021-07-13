@@ -6,28 +6,28 @@
         style="transition-delay: 100ms"
         class="cursor-text"
       >
-        <span>👋 </span>Hi! My name is
+        <span>👋 </span>{{ $t("intro.title") }}
       </h1>
       <h2
         data-aos="fade-right"
         style="transition-delay: 250ms"
         class="cursor-text"
       >
-        {{ name }}
+        {{ $t("intro.info") }}
       </h2>
       <h3
         data-aos="fade-right"
         style="transition-delay: 400ms"
         class="cursor-text"
       >
-        {{ IDo }}
+        {{ $t("intro.ido") }}
       </h3>
       <p
         data-aos="fade-right"
         style="transition-delay: 550ms"
         class="cursor-text"
       >
-        {{ des }}
+        {{ $t("intro.des") }}
       </p>
       <div
         data-aos="fade-right"
@@ -48,7 +48,7 @@
             class="padding: 20px;"
             style="display: flex; align-items: center; gap: 20px"
           >
-            <span>CONTINUE</span>
+            <span>{{ $t("intro.continue") }}</span>
             <Icon class="arrow-icon" name="arrowRight" :size="24" />
           </p>
         </GradientBorder>

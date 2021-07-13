@@ -2,12 +2,12 @@
   <div class="contact-form">
     <div class="form">
       <div v-show="showError" class="alert show-error">
-        <h1>Opsy! Message not Sent 😅</h1>
-        <p>I think some fields are empty, please fill them all out.</p>
+        <h1>{{ $t("contact.form.detect.h1") }}</h1>
+        <p>{{ $t("contact.form.detect.p") }}</p>
       </div>
       <div v-show="sent && !showError" class="alert show-success">
-        <h1>Message Sent! 😊</h1>
-        <p>Your message was sent successfuly! I'll check them later.</p>
+        <h1>{{ $t("contact.form.success.h1") }}</h1>
+        <p>{{ $t("contact.form.success.p") }}</p>
       </div>
       <div class="flex">
         <input v-model="form.name" type="text" placeholder="Name" />

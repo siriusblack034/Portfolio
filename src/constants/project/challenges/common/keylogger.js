@@ -1,4 +1,5 @@
 export default {
+  key: "keylogger",
   title: "Keylogger",
   des: "<p> </p>",
   headIcon: 'chat',

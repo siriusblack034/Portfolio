@@ -3,11 +3,12 @@
     <section class="my-work" style="margin-bottom: 80px">
       <div data-aos="fade-down">
         <h2 class="numbered-header" style="margin: 10px 0px -10px">
-          <Icon class="front-icon" name="code" :size="25" /> {{ works.title }}
+          <Icon class="front-icon" name="code" :size="25" />
+          {{ $t("project.title") }}
         </h2>
-        <p class="header-des">{{ works.des }}</p>
+        <!-- <p class="header-des">{{ $t("project.des") }}</p> -->
       </div>
-      <div style="margin-top: 20px">
+      <div style="margin-top: 100px">
         <div v-for="(work, i) in works.works" :key="i">
           <div class="work-info" :style="'transition-delay:' + i * 200 + 'ms'">
             <div
@@ -18,7 +19,7 @@
               <p class="info-overline">{{ work.overline }}</p>
               <h3 class="info-title">{{ work.title }}</h3>
               <div class="info-des-container">
-                <p class="info-text" v-html="work.des"></p>
+                <p class="info-text" v-html="getDesWork(work.img)"></p>
               </div>
               <ul
                 class="info-tech-list"
@@ -93,6 +94,13 @@ export default {
     },
   },
   methods: {
+    getDesWork(img) {
+      let listWork = this.$t("project.works");
+      let work = listWork.filter((el) => el.img == img);
+      console.log(work);
+      let des = work[0].des;
+      return des;
+    },
     openSite(site) {
       window.open(site, "_blank");
     },

@@ -1,4 +1,5 @@
 export default {
+  key:'tour-management-application',
   title: "Tour management Application",
   des: "<p>Tour management application including ticket purchase, registration, ticket cancellation, ... </p>",
   headIcon: 'chat',

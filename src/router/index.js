@@ -12,10 +12,10 @@ const routes = [
     name: "AboutMe",
     component: Intro,
   },
-  /*  {
-      path: "/experience",
-      name: "Experience",
-      component: () => import("./../views/MyExperience")
+  /* {
+    path: "/experience",
+    name: "Experience",
+    component: () => import("../components/PreLoader.vue")
   }, */
   {
     path: "/Project",

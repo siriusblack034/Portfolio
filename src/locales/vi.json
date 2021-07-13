@@ -1,0 +1,159 @@
+
+{
+  "message": "hello i18n !!",
+  "nav":{
+    "about-me":"Giới thiệu",
+    "projects": "Dự án",
+    "contact-me":"Liên hệ",
+    "resume":"CV",
+    "view":{
+      "green-light":"Xanh",
+      "yellow-orange":"Vàng Cam",
+      "under-thesea":"Xanh Nước Biển",
+      "night-burns":"Ban Đêm",
+      "light-burns":"Ban Ngày"
+    }
+
+  },
+  "foot":"Programming isn't about what you know; it's about what you can figure out.",
+  "intro":{
+    "title":"Xin chào! Tên tôi là",
+    "ido":"Tôi xây dựng mọi thứ cho web.",
+    "des": "Cảm ơn bạn đã ghé thăm Trang web cá nhân của tôi. Vui lòng nhấp vào tiếp tục 😊",
+    "email": "chien08082000@gmail.com",
+    "continue":"TIẾP TỤC"
+  },
+  "about-me":{
+    "title":"Giới Thiệu",
+    "info":"<p> Xin chào! Tôi là Tuấn Chiến và tôi là Nhà phát triển web. </p> <p> Tôi thích tạo ra những thứ sống động trên internet, cho dù đó là trang web, ứng dụng hay bất cứ thứ gì ở giữa. <br> <br> Tôi rất muốn <u><i><b> Tham gia / Làm việc</b></i></u>  trong một công ty / dự án và <u> <i> <b> Giúp giải quyết vấn đề của họ hoặc tạo ra ý tưởng </b> </i> </u>, điều đó cũng sẽ giúp tôi phát triển kiến ​​thức và nâng cao kỹ năng của mình. Tôi hoan nghênh các dự án đầy thử thách và thích làm việc với tất cả các loại tính cách. < / p> <p> Dưới đây là một số công nghệ mà tôi đang làm việc gần đây: </p> "
+      
+  ,
+    "skill-list":{
+      "js": "JavaScript là ngôn ngữ lập trình phổ biến nhất thế giới. JavaScript là ngôn ngữ lập trình của Web. JavaScript rất dễ học. Hướng dẫn này sẽ dạy bạn JavaScript từ cơ bản đến nâng cao.",
+      "html": "HTML (Ngôn ngữ đánh dấu siêu văn bản) và CSS (Trang tính kiểu xếp tầng) là hai trong số các công nghệ cốt lõi để xây dựng trang Web. HTML cung cấp cấu trúc của trang, CSS bố cục (hình ảnh và âm thanh), cho nhiều loại của các thiết bị. ",
+      "vue":"Tự tin xây dựng ứng dụng Vue.js tiếp theo của bạn bằng NuxtJS. Một khung mã nguồn mở giúp việc phát triển web trở nên đơn giản và mạnh mẽ. <a href = \" https: //nuxtjs.org/ \"target = \" _ blank \"alt = \" chuyển tới Nuxtjs \"> Chuyển tới NuxtJS </a>",
+      "nuxt":"Tự tin xây dựng ứng dụng Vue.js tiếp theo của bạn bằng NuxtJS. Một khung mã nguồn mở giúp việc phát triển web trở nên đơn giản và mạnh mẽ. <a href = \" https: //nuxtjs.org/ \"target = \" _ blank \"alt = \" chuyển tới Nuxtjs \"> Chuyển tới NuxtJS </a>",
+      "vuetify":"Vuetify là một khung giao diện người dùng hoàn chỉnh được xây dựng dựa trên Vue.js. Mục tiêu của dự án là cung cấp cho các nhà phát triển những công cụ họ cần để xây dựng trải nghiệm người dùng phong phú và hấp dẫn",
+      "java":"Java là trung tâm của lối sống kỹ thuật số của chúng tôi. Đó là nền tảng để khởi động sự nghiệp, khám phá giao diện giữa con người với kỹ thuật số, cấu trúc các ứng dụng tốt nhất trên thế giới và mở khóa sự đổi mới ở mọi nơi — từ nhà để xe đến các tổ chức toàn cầu."
+
+    }
+  },
+  "project":{
+    "title": "Một số thứ mà tôi đã xây dựng",
+    "works": [
+      {
+        "overline": "Dự án nổi bật",
+        "title": "Youtobe Clone Project",
+        "des":
+        "Dự án dựa trên <a href=\"https://www.youtube.com/\" target=\"_blank\" alt=\"go to Youtube\"> Youtube WebSite </a>, bao gồm các chức năng như: Tìm kiếm, Trang chủ, Xem video, Xu hướng, ... ",
+        "techs": ["Javascript", "vue", "API", "Firebase"],
+        "links": [
+          {
+            "link":
+              "https://github.com/siriusblack034/youtube-clone",
+            "icon": "github",
+            "tooltip": "Mở trong Github"
+          },
+          {
+            "link": "https://youtube-clone034.herokuapp.com/",
+            "icon": "link",
+            "tooltip": "Mở Website"
+          }
+        ],
+        "imageLink": "https://youtube-clone034.herokuapp.com/",
+        "img": "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/210791803_211274144101268_7106958680250238826_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=M-zmc4dolBwAX-Y9vOn&_nc_ht=scontent.fhan14-2.fna&oh=422f42f06ffa42bf00fb35c7414b4f23&oe=60F15BA3"
+      },
+      {
+        "overline": "Dự án nổi bật",
+        "title": "Weather Forecast Website",
+        "des":
+        "Một trang web rất đơn giản, Dự án này giúp người dùng tìm kiếm và dự báo thời tiết cho các khu vực trên thế giới.",
+        "techs": ["Vue", "Javascript"],
+        "links": [
+          {
+            "link":
+              "https://github.com/siriusblack034/forecast-weather",
+            "icon": "github",
+            "tooltip": "Mở trong Github"
+          },
+          {
+            "link": "",
+            "icon": "link",
+            "tooltip": "Mở Website"
+          }
+        ],
+        "imageLink": "",
+        "img": "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/215606313_874957966436693_1420093290586162203_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=ae9488&_nc_ohc=IAGJr41hqbQAX-g5kBq&_nc_ht=scontent.fhan14-2.fna&oh=8ebca6689f0d2b55b6d2b55ca978716f&oe=60F0A300"
+      },
+      {
+        "overline": "Dự án nổi bật",
+        "title": " Covid Statistics Website",
+        "des":
+        "Với dự án này, bạn có thể xem dữ liệu chi tiết về covid-19 ở tất cả các quốc gia trên thế giới.", 
+        "techs": ["Vue", "API", "Javascript", "Vuetify"],
+        "links": [
+          {
+            "link": "https://github.com/siriusblack034/Statistic-Covid-19",
+            "icon": "github",
+            "tooltip": "Mở trong Github"
+          },
+          {
+            "link": "https://statisti-covid19.herokuapp.com/",
+            "icon": "link",
+            "tooltip": "Mở Website"
+          }
+        ],
+        "imageLink": "https://statisti-covid19.herokuapp.com/",
+        "img": "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/215485689_330077838547833_636687948635425258_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=ZKpxc9gcB3YAX8CQghw&_nc_ht=scontent.fhan14-2.fna&oh=f85b98809b1c5d4f90c2ec7f1b7eca8c&oe=60F0117D"
+      },
+      {
+        "overline": "Dự án nổi bật",
+        "title": "Portfolio",
+        "des":
+          "Đây là một trang giới thiệu bản thân, nó được lấy ý tưởng từ <a href=\"https://github.com/bchiang7/v4\">Brittany's</a>. Tôi đã dựa trên website của cô ấy để tạo một bản cho riêng mình dựa trên VueJS !",
+        "techs": ["vue", "PWA", "javascript"],
+        "links": [
+          {
+            "link": "https://github.com/BroJenuel/jenuel-portfolio-v2",
+            "icon": "github",
+            "tooltip": "Mở trong Github"
+          },
+          {
+            "link": "https://jenuelganawed.ml",
+            "icon": "link",
+            "tooltip": "Mở Website"
+          }
+        ],
+        "imageLink": "https://jenuelganawed.ml",
+        "img": "https://i.imgur.com/ygEsq4Kl.png"
+      }
+    ],
+    "challenges":{
+      "todo-list":"Website này có thể giúp bạn lên danh sách các việc cần làm, để dễ dàng quản lý chúng !",
+      "keylogger":"Một ứng dụng đọc bàn phím và chụp ảnh màn hình.",
+      "tour-management-application":"<p> Ứng dụng quản lý tour bao gồm mua vé, đăng ký, hủy vé, ... </p>", 
+      "clone-shopee":"Làm lại giao diện một trang của Shopee bằng HTML & CSS ",
+      "tin-dog":"Một giao diện tin tức về những người yêu thú cưng! " 
+    }
+      
+    
+  },
+  "contact":{
+    "title":"Liên Hệ",
+    "des":"Tôi hiện đang tìm việc làm. Tuy nhiên, nếu bạn có yêu cầu hoặc câu hỏi khác, đừng ngần ngại liên hệ với tôi bằng cách sử dụng biểu mẫu dưới đây.", 
+    "form":{
+      "detect":{
+        "h1": "Opsy! Chưa gửi được tin nhắn 😅",
+        "p":"Tôi nghĩ rằng một số trường trống, vui lòng điền vào tất cả."
+      },
+      "success":{
+        "h1":"Message Sent! 😊",
+        "p":"Tin nhắn của bạn đã được gửi thành công! Tôi sẽ kiểm tra chúng sau."
+      }
+    }
+  },
+  "page-not-found":"THE PAGE CAN'T BE FOUND"
+
+  
+
+}

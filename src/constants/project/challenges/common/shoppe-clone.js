@@ -1,4 +1,5 @@
 export default {
+  key:"clone-shopee",
   title: "Clone Shopee Home Page",
   des: "<p>Clone  </p>",
   headIcon: 'chat',

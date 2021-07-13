@@ -1,4 +1,5 @@
 export default {
+  key: "todo-list",
   title: "Todo-list",
   des: "<p> </p>",
   headIcon: 'chat',

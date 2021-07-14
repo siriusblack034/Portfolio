@@ -37,6 +37,7 @@
 </template>
 <script>
 import ClickOutside from "vue-click-outside";
+import { mapActions, mapMutations, mapState } from "vuex";
 export default {
   data() {
     return {
@@ -76,17 +77,20 @@ export default {
     };
   },
   created() {
-    let theme = localStorage.getItem("theme")
-      ? localStorage.getItem("theme")
-      : "Green Light";
+    this.setTheme();
+    let theme = this.theme;
     document.documentElement.setAttribute("theme", theme);
     this.selectedTheme = theme;
   },
-
+  computed: {
+    ...mapState(["theme"]),
+  },
   mounted() {
     this.popupItem = this.$el;
   },
   methods: {
+    ...mapActions(["setTheme"]),
+    ...mapMutations(["setThemeMu"]),
     hide() {
       this.open = false;
     },
@@ -101,12 +105,18 @@ export default {
       localStorage.setItem("theme", theme.name);
       this.selectedTheme = theme.name;
       document.documentElement.setAttribute("theme", theme.name);
+      this.setThemeMu(theme.name);
       this.hide();
     },
   },
   // do not forget this section
   directives: {
     ClickOutside,
+  },
+  watch: {
+    theme(newVal) {
+      this.selectedTheme = newVal;
+    },
   },
 };
 </script>

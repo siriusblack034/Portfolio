@@ -32,6 +32,7 @@
 <script>
 import ClickOutside from "vue-click-outside";
 import Icon from "./Icon/Icon.vue";
+import { mapState, mapMutations, mapActions } from "vuex";
 export default {
   components: {
     Icon,
@@ -40,6 +41,8 @@ export default {
     getFillColor() {
       return this.open ? "fill: var(--primary);" : "fill: var(--lightSlate);";
     },
+
+    ...mapState(["lang"]),
   },
   data() {
     return {
@@ -57,18 +60,25 @@ export default {
       ],
     };
   },
+
   created() {
+    let lang = this.setLang();
+    document.documentElement.setAttribute("lang", lang);
+    this.selectedLang = lang;
+    this.$i18n.locale = lang;
+  },
+
+  mounted() {
     let lang = localStorage.getItem("lang")
       ? localStorage.getItem("lang")
       : "en";
     document.documentElement.setAttribute("lang", lang);
     this.selectedLang = lang;
-  },
-
-  mounted() {
     this.popupItem = this.$el;
   },
   methods: {
+    ...mapActions(["setLang"]),
+    ...mapMutations(["setLangMu"]),
     hide() {
       this.open = false;
     },
@@ -81,6 +91,7 @@ export default {
       this.selectedLang = lang.key;
       this.$i18n.locale = lang.key;
       document.documentElement.setAttribute("lang", lang.name);
+      this.setLangMu(lang.key);
       this.hide();
     },
   },
@@ -88,10 +99,21 @@ export default {
   directives: {
     ClickOutside,
   },
+  watch: {
+    lang(newVal) {
+      this.selectedLang = newVal;
+    },
+  },
 };
 </script>
 <style lang="scss">
+.nav__lang-icon {
+  fill: var(--lightSlate);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .theme-dropdown {
+  padding: 0;
   cursor: pointer;
   .color-selector {
     height: 2rem;

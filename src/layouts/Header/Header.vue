@@ -25,7 +25,7 @@
 
           <li
             data-aos="fade-right"
-            style="transition-delay: 400ms"
+            style="transition-delay: 200ms"
             @click="$router.push({ name: 'Project' })"
           >
             <div :class="{ active: $route.name == 'Project' }">
@@ -35,7 +35,7 @@
           </li>
           <li
             data-aos="fade-right"
-            style="transition-delay: 550ms"
+            style="transition-delay: 350ms"
             @click="$router.push({ name: 'Contact' })"
           >
             <div :class="{ active: $route.name == 'Contact' }">
@@ -46,7 +46,7 @@
         </ol>
         <GradientBorder
           data-aos="fade-right"
-          style="transition-delay: 850ms; margin-left: 20px; font-weight: 900"
+          style="transition-delay: 550ms; margin-left: 20px; font-weight: 900"
           :withBg="false"
         >
           <a
@@ -59,10 +59,14 @@
             {{ $t("nav.resume") }}
           </a>
         </GradientBorder>
-        <div data-aos="fade-right" style="transition-delay: 1000ms">
+        <div data-aos="fade-right" style="transition-delay: 700ms">
           <ThemeChanger />
         </div>
-        <div class="nav__lang">
+        <div
+          class="nav__lang"
+          data-aos="fade-right"
+          style="transition-delay: 850ms"
+        >
           <LangChanger />
         </div>
       </div>
@@ -146,11 +150,6 @@ export default {
   padding-right: 32px;
 }
 
-.nav__lang-icon {
-  fill: var(--lightSlate);
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
 
 .nav__lang-option {
   display: none;

@@ -76,17 +76,17 @@ export default {
       techs: ["vue", "PWA", "javascript"],
       links: [
         {
-          link: "https://github.com/BroJenuel/jenuel-portfolio-v2",
+          link: "https://github.com/siriusblack034/Portfolio",
           icon: "github",
           tooltip: "Open In Github"
         },
         {
-          link: "https://jenuelganawed.ml",
+          link: "https://sirius-black88.herokuapp.com/",
           icon: "link",
           tooltip: "Open Link"
         }
       ],
-      imageLink: "https://jenuelganawed.ml",
+      imageLink: "https://sirius-black88.herokuapp.com/",
       img: "https://scontent.fhan2-2.fna.fbcdn.net/v/t1.15752-9/215226288_240539031007194_10339361780113545_n.png?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=b2iZ8KWRXacAX-oz6W2&_nc_ht=scontent.fhan2-2.fna&oh=a68491ac5ee97956152737e77a547e69&oe=60F2EAD9"
     },
 

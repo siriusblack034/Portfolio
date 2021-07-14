@@ -97,9 +97,9 @@ export default {
     getDesWork(img) {
       let listWork = this.$t("project.works");
       let work = listWork.filter((el) => el.img == img);
-      console.log(work);
       let des = work[0].des;
-      return des;
+      console.log(des + "des");
+      return des ? des : "";
     },
     openSite(site) {
       window.open(site, "_blank");

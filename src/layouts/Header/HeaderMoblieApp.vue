@@ -7,14 +7,13 @@
         </div>
       </div>
       <ul>
-        <li>
+        <li style="transition-delay: 100ms">
           <div>
             <ThemeChanger />
           </div>
         </li>
         <li
-          data-aos="fade-right"
-          style="transition-delay: 100ms"
+          style="transition-delay: 200ms"
           @click="
             $router.push({ name: 'AboutMe' });
             $store.state.navShow = false;
@@ -22,13 +21,12 @@
         >
           <div :class="{ active: $route.name == 'AboutMe' }">
             <Icon name="user" :size="15" />
-            {{$t('nav.about-me')}}
+            {{ $t("nav.about-me") }}
           </div>
         </li>
 
         <li
-          data-aos="fade-right"
-          style="transition-delay: 400ms"
+          style="transition-delay: 300ms"
           @click="
             $router.push({ name: 'Project' });
             $store.state.navShow = false;
@@ -36,13 +34,11 @@
         >
           <div :class="{ active: $route.name == 'Project' }">
             <Icon name="code" :size="15" />
-                        {{$t('nav.projects')}}
-
+            {{ $t("nav.projects") }}
           </div>
         </li>
         <li
-          data-aos="fade-right"
-          style="transition-delay: 550ms"
+          style="transition-delay: 400ms"
           @click="
             $router.push({ name: 'Contact' });
             $store.state.navShow = false;
@@ -50,12 +46,11 @@
         >
           <div :class="{ active: $route.name == 'Contact' }">
             <Icon name="envelope" :size="15" />
-                        {{$t('nav.contact-me')}}
-
+            {{ $t("nav.contact-me") }}
           </div>
         </li>
-        
-        <li data-aos="fade-right" style="transition-delay: 700ms">
+
+        <li style="transition-delay: 500ms">
           <GradientBorder
             data-aos="fade-right"
             style="width: 150px"
@@ -68,15 +63,26 @@
               rel="noopener"
             >
               <Icon name="file" :size="15" />
-                 {{$t('nav.resume')}}
-
+              {{ $t("nav.resume") }}
             </a>
+          </GradientBorder>
+        </li>
+        <li style="transition-delay: 600ms">
+          <GradientBorder
+            aria-label="Send Message"
+            style="width: 150px; font-size: 1.5rem !important; font-weight: 900"
+          >
+            <div class="nav__lang">
+              <LangChanger />
+            </div>
           </GradientBorder>
         </li>
         <li>
           <ul class="social-medias-in-nav">
             <li v-for="social in SocialNetwork" :key="social.link">
-              <Icon :name="social.icon" :size="30" />
+              <div @click="goToLink(social.link)" class="a-link">
+                <Icon :name="social.icon" :size="30" />
+              </div>
             </li>
           </ul>
         </li>
@@ -90,12 +96,13 @@
   </div>
 </template>
 <script>
+import LangChanger from "./../../components/LangChanger.vue";
 import ThemeChanger from "./../../components/ThemeChanger.vue";
 import Icon from "../../components/Icon/Icon.vue";
 import GradientBorder from "./../../components/GradientBorder.vue";
 import { socialMediaLinks } from "./../../constants/social-network";
 export default {
-  components: { Icon, GradientBorder, ThemeChanger },
+  components: { Icon, GradientBorder, ThemeChanger, LangChanger },
   computed: {
     SocialNetwork: () => socialMediaLinks,
   },
@@ -106,6 +113,17 @@ export default {
   },
 };
 </script>
+<style  >
+.nav__lang {
+  padding: 0 !important ;
+}
+li > div > .gradient-border {
+  height: 20px;
+}
+.nav__lang > .theme-dropdown .theme-dropdown-content {
+  right: -50px;
+}
+</style>
 <style lang="scss">
 .nav-mobile {
   display: none;
@@ -160,11 +178,11 @@ export default {
     }
     ul.social-medias-in-nav {
       padding: 0;
+      padding-left: 40px;
       margin: 0;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      visibility: hidden;
     }
   }
   .nav-back {

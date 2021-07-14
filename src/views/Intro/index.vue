@@ -13,7 +13,7 @@
         style="transition-delay: 250ms"
         class="cursor-text"
       >
-        {{ $t("intro.info") }}
+        Nguyen Tuan Chien
       </h2>
       <h3
         data-aos="fade-right"

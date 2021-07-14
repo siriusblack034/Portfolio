@@ -62,7 +62,7 @@ export default {
         margin-top: 10px;
         color: var(--lightSlate);
         font-size: 0.9rem;
-        line-height: 1.2;
+        line-height: 1.5;
       }
     }
     footer {

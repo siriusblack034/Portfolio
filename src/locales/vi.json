@@ -29,7 +29,7 @@
       
   ,
     "skill-list":{
-      "js": "JavaScript là ngôn ngữ lập trình phổ biến nhất thế giới. JavaScript là ngôn ngữ lập trình của Web. JavaScript rất dễ học. Hướng dẫn này sẽ dạy bạn JavaScript từ cơ bản đến nâng cao.",
+      "javascript": "JavaScript là ngôn ngữ lập trình phổ biến nhất thế giới. JavaScript là ngôn ngữ lập trình của Web. JavaScript rất dễ học. Hướng dẫn này sẽ dạy bạn JavaScript từ cơ bản đến nâng cao.",
       "html": "HTML (Ngôn ngữ đánh dấu siêu văn bản) và CSS (Trang tính kiểu xếp tầng) là hai trong số các công nghệ cốt lõi để xây dựng trang Web. HTML cung cấp cấu trúc của trang, CSS bố cục (hình ảnh và âm thanh), cho nhiều loại của các thiết bị. ",
       "vue":"Tự tin xây dựng ứng dụng Vue.js tiếp theo của bạn bằng NuxtJS. Một khung mã nguồn mở giúp việc phát triển web trở nên đơn giản và mạnh mẽ. <a href = \" https: //nuxtjs.org/ \"target = \" _ blank \"alt = \" chuyển tới Nuxtjs \"> Chuyển tới NuxtJS </a>",
       "nuxt":"Tự tin xây dựng ứng dụng Vue.js tiếp theo của bạn bằng NuxtJS. Một khung mã nguồn mở giúp việc phát triển web trở nên đơn giản và mạnh mẽ. <a href = \" https: //nuxtjs.org/ \"target = \" _ blank \"alt = \" chuyển tới Nuxtjs \"> Chuyển tới NuxtJS </a>",

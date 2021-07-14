@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     setViewBox() {
-      return this.name == "vuetify" || this.name == "java"
+      return this.name == "vuetify" || this.name == "java" || this.name =='lang'
         ? "0 0 24 24"
         : "0 0 15 15";
     },

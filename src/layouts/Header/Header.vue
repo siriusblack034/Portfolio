@@ -63,25 +63,7 @@
           <ThemeChanger />
         </div>
         <div class="nav__lang">
-          <div>
-            <Icon
-              name="lang"
-              :size="20"
-              class="nav__lang-icon"
-              style="
-                fill: var(--lightSlate);
-                transition: 0.2s ease-in-out;
-                cursor: pointer;
-              "
-            />
-          </div>
-          <div class="nav__lang-option">
-            <h3 class="nav__lang-item">
-              English
-              <i class="fas fa-check"></i>
-            </h3>
-            <h3 class="nav__lang-item">Tiếng Việt</h3>
-          </div>
+          <LangChanger />
         </div>
       </div>
       <div class="show-mobile-nav-but">
@@ -99,13 +81,14 @@
 
 <script>
 import ThemeChanger from "../../components/ThemeChanger.vue";
+import LangChanger from "../../components/LangChanger.vue";
 import Icon from "./../../components/Icon/Icon.vue";
 import GradientBorder from "../../components/GradientBorder.vue";
 import { mapMutations } from "vuex";
 import Logo from "../../components/Logo";
 export default {
   name: "Header",
-  components: { Icon, GradientBorder, ThemeChanger, Logo },
+  components: { Icon, GradientBorder, ThemeChanger, Logo, LangChanger },
   data() {
     return {
       scroll: 0,
@@ -162,8 +145,7 @@ export default {
 .navs {
   padding-right: 32px;
 }
-.nav__lang {
-}
+
 .nav__lang-icon {
   fill: var(--lightSlate);
   transition: 0.2s ease-in-out;
@@ -182,10 +164,7 @@ export default {
   border-radius: 2px;
   outline: none;
 }
-.nav__lang-item {
-}
-.nav__lang-item {
-}
+
 .logo-image {
   margin-left: 26px;
 }

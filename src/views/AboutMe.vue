@@ -12,7 +12,7 @@
               />{{ dialogContent.title }}
             </h1>
             <div>
-              <p v-html="dialogContent.des"></p>
+              <p v-html="getDesSkill(dialogContent.icon)"></p>
             </div>
           </div>
         </transition>
@@ -63,7 +63,7 @@
               <div class="photo-front"></div>
               <img
                 loading="lazy"
-                src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s280x280/194282812_1022248208309921_2388608516240209942_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=aee45a&_nc_ohc=Ug5q4-yg3UcAX8Rou1i&_nc_oc=AQlu-S2M7nXM38PIGuQG1nK2X1hqKTNunG3wjMd4tlND1W7ZnbAJ2_JFoGsMWaASYXQPmnmww7xPC2WPOolCR3wX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=e3635d9d44df8c0ef7b0d710a9cd98a8&oe=60F191A8"
+                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-0/p206x206/215795679_1093189854540618_6282098725033154446_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=sW3meXO75uQAX-Lbn9q&_nc_oc=AQmVcPeUoW8x67jzscKtkO4f6hvg6uCsNOcAgiUubOP46Js_EOOsroIYmKhShNZwZj2M4TaaL_1DGRSQnJter2OC&_nc_ht=scontent.fhan2-3.fna&oh=a5356b4f209e8117bb6cafc40dbcc5db&oe=60F37BDF"
                 alt="Tuan Chien - Profile Picture"
                 width="300"
                 height="300"
@@ -123,6 +123,11 @@ export default {
         icon: skill.icon,
       };
       this.dialog = !this.dialog;
+    },
+    getDesSkill(name) {
+      let skill = this.$t("about-me.skill-list");
+      console.log(name + " " + skill);
+      return skill[name];
     },
   },
 };

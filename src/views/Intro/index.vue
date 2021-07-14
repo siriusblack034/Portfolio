@@ -54,17 +54,20 @@
         </GradientBorder>
       </div>
     </section>
+    <PreLoader :isShow="isShow" />
   </div>
 </template>
 
 <script>
 import GradientBorder from "../../components/GradientBorder.vue";
 import Icon from "../../components/Icon/Icon.vue";
+import PreLoader from "../../components/PreLoader.vue";
 export default {
-  components: { GradientBorder, Icon },
+  components: { GradientBorder, Icon, PreLoader },
 
   data() {
     return {
+      isShow: false,
       name: "Nguyen Tuan Chien",
       IDo: "I Build Things for the web.",
       des: "Thanks for Visiting my Personal Website. Please, click continue 😊",
@@ -74,11 +77,15 @@ export default {
 
   methods: {
     closeModal() {
-      if (this.$store.state.show == false) {
-        localStorage.setItem("showedIntro", "done");
-        localStorage.setItem("expy", Date.now() + 1 * 60 * 60 * 1000);
-        this.$store.state.show = true;
-      }
+      this.isShow = true;
+      setTimeout(() => {
+        if (this.$store.state.show == false) {
+          localStorage.setItem("showedIntro", "done");
+          localStorage.setItem("expy", Date.now() + 1 * 60 * 60 * 1000);
+          this.$store.state.show = true;
+          this.isShow = false;
+        }
+      }, 4100);
     },
   },
 };

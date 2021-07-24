@@ -63,7 +63,7 @@
               <div class="photo-front"></div>
               <img
                 loading="lazy"
-                src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.15752-0/p206x206/215795679_1093189854540618_6282098725033154446_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=aee45a&_nc_ohc=sW3meXO75uQAX-Lbn9q&_nc_oc=AQmVcPeUoW8x67jzscKtkO4f6hvg6uCsNOcAgiUubOP46Js_EOOsroIYmKhShNZwZj2M4TaaL_1DGRSQnJter2OC&_nc_ht=scontent.fhan2-3.fna&oh=a5356b4f209e8117bb6cafc40dbcc5db&oe=60F37BDF"
+                src="https://i.ibb.co/wy6WddP/215795679-1093189854540618-6282098725033154446-n.jpg"
                 alt="Tuan Chien - Profile Picture"
                 width="300"
                 height="300"

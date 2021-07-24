@@ -25,7 +25,7 @@ export const store = new vuex.Store({
       let lang = localStorage.getItem("lang")
         ? localStorage.getItem("lang")
         : "en";
-      commit('setLang', lang);
+      commit('setLangMu', lang);
     },
     setTheme({ commit }) {
       let theme = localStorage.getItem("theme")

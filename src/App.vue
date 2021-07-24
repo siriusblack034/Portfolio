@@ -19,9 +19,12 @@ import Overlay from "./components/Overlay.vue";
 import Intro from "./views/Intro/index.vue";
 import MobileNav from "./layouts/Header/HeaderMoblieApp.vue";
 import SocialMediaLinks from "./components/SocialMediaLinks.vue";
+import { mapActions } from "vuex";
 export default {
   components: { SocialMediaLinks, Header, Overlay, Intro, MobileNav, Footer },
   created() {
+    this.setLang();
+    this.setTheme();
     if (localStorage.getItem("showedIntro") == "done") {
       let ext = localStorage.getItem("expy")
         ? localStorage.getItem("expy")
@@ -36,24 +39,9 @@ export default {
         }
       }
     }
-    console.log(
-      "%cHey! Whats Up! \n =))\nThanks for looking! Hit me up on FaceBook Nguyễn Tuấn Chiến !",
-      "padding:10px;" +
-        "border-radius: 10px;" +
-        "color:#64ffda;" +
-        "font-family:'Ubuntu';" +
-        "display: block;" +
-        "font-weight:bold;" +
-        "font-size:48px;" +
-        "background:#0a192f;",
-      "padding: 10px; " +
-        "border-radius:10px; " +
-        "color:#ccd6f6; " +
-        "font-family:'Ubuntu'; " +
-        "font-weight:100; " +
-        "font-size:24px; " +
-        "background:#0a192f;"
-    );
+  },
+  methods: {
+    ...mapActions(["setLang", "setTheme"]),
   },
 };
 </script>

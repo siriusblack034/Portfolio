@@ -62,18 +62,13 @@ export default {
   },
 
   created() {
-    let lang = this.setLang();
+    let lang = this.lang;
     document.documentElement.setAttribute("lang", lang);
     this.selectedLang = lang;
     this.$i18n.locale = lang;
   },
 
   mounted() {
-    let lang = localStorage.getItem("lang")
-      ? localStorage.getItem("lang")
-      : "en";
-    document.documentElement.setAttribute("lang", lang);
-    this.selectedLang = lang;
     this.popupItem = this.$el;
   },
   methods: {

@@ -34,8 +34,10 @@
       "vue":"Tự tin xây dựng ứng dụng Vue.js tiếp theo của bạn bằng NuxtJS. Một khung mã nguồn mở giúp việc phát triển web trở nên đơn giản và mạnh mẽ. <a href = \" https: //nuxtjs.org/ \"target = \" _ blank \"alt = \" chuyển tới Nuxtjs \"> Chuyển tới NuxtJS </a>",
       "nuxt":"Tự tin xây dựng ứng dụng Vue.js tiếp theo của bạn bằng NuxtJS. Một khung mã nguồn mở giúp việc phát triển web trở nên đơn giản và mạnh mẽ. <a href = \" https: //nuxtjs.org/ \"target = \" _ blank \"alt = \" chuyển tới Nuxtjs \"> Chuyển tới NuxtJS </a>",
       "vuetify":"Vuetify là một khung giao diện người dùng hoàn chỉnh được xây dựng dựa trên Vue.js. Mục tiêu của dự án là cung cấp cho các nhà phát triển những công cụ họ cần để xây dựng trải nghiệm người dùng phong phú và hấp dẫn",
-      "java":"Java là trung tâm của lối sống kỹ thuật số của chúng tôi. Đó là nền tảng để khởi động sự nghiệp, khám phá giao diện giữa con người với kỹ thuật số, cấu trúc các ứng dụng tốt nhất trên thế giới và mở khóa sự đổi mới ở mọi nơi — từ nhà để xe đến các tổ chức toàn cầu."
-
+      "java":"Java là trung tâm của lối sống kỹ thuật số của chúng tôi. Đó là nền tảng để khởi động sự nghiệp, khám phá giao diện giữa con người với kỹ thuật số, cấu trúc các ứng dụng tốt nhất trên thế giới và mở khóa sự đổi mới ở mọi nơi — từ nhà để xe đến các tổ chức toàn cầu.",
+      "node":"Node.js là một hệ thống phần mềm được thiết kế để viết các ứng dụng internet có khả năng mở rộng, đặc biệt là máy chủ web.",
+      "express":"Ứng dụng web Express là một khung ứng dụng web Node.js tối thiểu và linh hoạt, cung cấp một bộ tính năng mạnh mẽ cho các ứng dụng web và di động.",
+      "mongoDB":"MongoDB là một chương trình cơ sở dữ liệu hướng tài liệu đa nền tảng, sẵn sàng cho nguồn. Được phân loại là chương trình cơ sở dữ liệu NoSQL, MongoDB sử dụng các tài liệu giống JSON với các lược đồ tùy chọn."
     }
   },
   "project":{
@@ -61,29 +63,29 @@
           }
         ],
         "imageLink": "https://youtube-clone034.herokuapp.com/",
-        "img": "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/210791803_211274144101268_7106958680250238826_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=M-zmc4dolBwAX-Y9vOn&_nc_ht=scontent.fhan14-2.fna&oh=422f42f06ffa42bf00fb35c7414b4f23&oe=60F15BA3"
+        "img": "https://i.ibb.co/J7CnbMP/youtube-cline.jpg"
       },
       {
-        "overline": "Dự án nổi bật",
-        "title": "Weather Forecast Website",
+        "overline": "Featured Project",
+        "title": "Trello Clone",
         "des":
-        "Một trang web rất đơn giản, Dự án này giúp người dùng tìm kiếm và dự báo thời tiết cho các khu vực trên thế giới.",
-        "techs": ["Vue", "Javascript"],
+          "Một project gần giống với Trello. Tôi đã sử dụng Nodejs, Express, MongoDB để xây dựng phía Backend và Vue, Vuetify ở phía Frontend",
+        "techs": ["Vue", "Vuetify", "Javascript", "NodeJs", "Express", "MongoDB", ""],
         "links": [
           {
             "link":
-              "https://github.com/siriusblack034/forecast-weather",
+              "https://github.com/siriusblack034/trello-clone",
             "icon": "github",
-            "tooltip": "Mở trong Github"
+            "tooltip": "Open in Github"
           },
           {
             "link": "",
             "icon": "link",
-            "tooltip": "Mở Website"
+            "tooltip": "Open Link"
           }
         ],
         "imageLink": "",
-        "img": "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/215606313_874957966436693_1420093290586162203_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=ae9488&_nc_ohc=IAGJr41hqbQAX-g5kBq&_nc_ht=scontent.fhan14-2.fna&oh=8ebca6689f0d2b55b6d2b55ca978716f&oe=60F0A300"
+        "img": "https://i.ibb.co/fx5C11M/Capture.jpg"
       },
       {
         "overline": "Dự án nổi bật",
@@ -104,7 +106,7 @@
           }
         ],
         "imageLink": "https://statisti-covid19.herokuapp.com/",
-        "img": "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/215485689_330077838547833_636687948635425258_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=ZKpxc9gcB3YAX8CQghw&_nc_ht=scontent.fhan14-2.fna&oh=f85b98809b1c5d4f90c2ec7f1b7eca8c&oe=60F0117D"
+        "img": "https://i.ibb.co/PGcwQFN/Statictis-Covid.jpg"
       },
       {
         "overline": "Dự án nổi bật",
@@ -114,18 +116,39 @@
         "techs": ["vue", "PWA", "javascript"],
         "links": [
           {
-            "link": "https://github.com/BroJenuel/jenuel-portfolio-v2",
+            "link": "https://github.com/siriusblack034/Portfolio",
             "icon": "github",
             "tooltip": "Mở trong Github"
           },
           {
-            "link": "https://jenuelganawed.ml",
+            "link": "https://sirius-black88.herokuapp.com/",
             "icon": "link",
             "tooltip": "Mở Website"
           }
         ],
-        "imageLink": "https://jenuelganawed.ml",
-        "img": "https://scontent.fhan2-2.fna.fbcdn.net/v/t1.15752-9/215226288_240539031007194_10339361780113545_n.png?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=b2iZ8KWRXacAX-oz6W2&_nc_ht=scontent.fhan2-2.fna&oh=a68491ac5ee97956152737e77a547e69&oe=60F2EAD9"
+        "imageLink": "https://sirius-black88.herokuapp.com/",
+        "img": "https://i.ibb.co/nzdmHwB/web-Portfolio.png"
+      },
+      {
+        "overline": "Featured Project",
+        "title": "Real time video chat",
+        "des":
+        "Website này có thể giúp bạn nói chuyện với bạn bè của mình thông qua video chat, Nó sử dụng thư viện có sẵn <a href=\"https://docs.daily.co//\" target=\"_blank\" alt=\"go to Daily\">@daily-co/daily-js</a> để xây dựng nên website . ",
+        "techs": ["vue", "javascript"],
+        "links": [
+          {
+            "link": "https://github.com/siriusblack034/Portfolio",
+            "icon": "github",
+            "tooltip": "Open In Github"
+          },
+          {
+            "link": "https://nifty-kalam-145d6c.netlify.app/",
+            "icon": "link",
+            "tooltip": "Open Link"
+          }
+        ],
+        "imageLink": "https://nifty-kalam-145d6c.netlify.app/",
+        "img": "https://i.ibb.co/2WzFLbW/131709782-01ffc5e2-31fb-4dac-8ad0-9fcb9224c6fa.jpg"
       }
     ],
     "challenges":{
@@ -133,7 +156,9 @@
       "keylogger":"Một ứng dụng đọc bàn phím và chụp ảnh màn hình.",
       "tour-management-application":"<p> Ứng dụng quản lý tour bao gồm mua vé, đăng ký, hủy vé, ... </p>", 
       "clone-shopee":"Làm lại giao diện một trang của Shopee bằng HTML & CSS ",
-      "tin-dog":"Một giao diện tin tức về những người yêu thú cưng! " 
+      "tin-dog":"Một giao diện tin tức về những người yêu thú cưng! " ,
+      "forecase-weather":"Một website có thể giúp bạn xem được thời tiết hiện tại và tương lai gần ."
+
     }
       
     

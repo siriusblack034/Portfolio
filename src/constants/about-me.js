@@ -22,21 +22,31 @@ const skillList = [
     des: `Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members. <a href="https://vuejs.org/" target="_blank" alt="Go To VueJS">Go To VueJS</a>`
   },
   {
-    icon: 'nuxt',
-    text: 'Nuxt JS',
-    des: `Build your next Vue.js application with confidence using NuxtJS. An open source framework making web development simple and powerful. <a href="https://nuxtjs.org/" target="_blank" alt="go to Nuxtjs">Go To NuxtJS</a>`
-  },
-  {
     icon: 'vuetify',
     text: 'Vuetify',
     des: 'Vuetify is a complete UI framework built on top of Vue.js. The goal of the project is to provide developers with the tools they need to build rich and engaging user experiences'
+  },
+  {
+    icon: 'node',
+    text: 'Nodejs',
+    des: 'Node.js is an software system is design to write the internet application has the open width, specific is a web server.'
+  },
+  {
+    icon: 'express',
+    text: 'Express',
+    des: 'Web Applications Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.'
+  },
+  {
+    icon: 'mongoDB',
+    text: 'MongoDB',
+    des: 'MongoDB is a source-ready, cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.'
   },
   {
     icon: 'java',
     text: 'Java',
     des: 'Java is at the heart of our digital lifestyle. It\'s the platform for launching careers, exploring human-to-digital interfaces, architecting the world\'s best applications, and unlocking innovation everywhere—from garages to global organizations.'
   },
- 
+
 
 
 ];

@@ -14,7 +14,7 @@ export default {
   techs: [
     {
       name: "VueJS & JS ",
-      icon: 'vuejs'
+      icon: 'vue'
     }
   ]
 }
